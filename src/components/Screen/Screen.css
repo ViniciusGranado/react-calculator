@@ -1,0 +1,8 @@
+.Screen {
+  background-color: #FFF;
+  width: 100%;
+  height: 8rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}

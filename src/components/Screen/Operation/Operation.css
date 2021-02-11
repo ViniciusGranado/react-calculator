@@ -1,0 +1,17 @@
+.Operation {
+  flex: 1;
+  text-align: right;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  border-radius: 0.625rem;
+  padding: 0.625rem;
+  overflow-x: scroll;
+  scroll-snap-align: end;
+}
+
+@media (max-width: 450px) {
+  .Operation {
+    font-size: 2.5rem;
+  }
+}

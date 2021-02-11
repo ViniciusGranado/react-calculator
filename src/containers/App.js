@@ -1,5 +1,6 @@
 import './App.css';
-import Calculator from '../Components/Calculator/Calculator';
+import {useSelector, useDispatch} from 'react-redux';
+import Calculator from './Calculator/Calculator';
 
 function App() {
   return (

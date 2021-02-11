@@ -1,12 +1,13 @@
 import React from 'react';
 import Operation from './Operation/Operation';
-import Result from './Result/Result';
+import CurrentValue from './CurrentValue/CurrentValue';
+import './Screen.css';
 
 const Screen = () => {
   return (
     <div className='Screen'>
-      <Operation />
-      <Result />
+      <Operation/>
+      <CurrentValue/>
     </div>
   )
 }

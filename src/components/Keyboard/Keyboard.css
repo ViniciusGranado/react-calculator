@@ -1,0 +1,31 @@
+.Keyboard {
+  width: 100%;
+  flex: 1;
+  padding: 10px;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.Keyboard button {
+  border: none;
+  border-radius: 50%;
+  background-color: #523F38;
+  outline: none;
+  transition: background-color 0.2s linear;
+  color: #FFF;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.Keyboard button:hover {
+  background-color: #42332e;
+}
+.Keyboard button:active {
+  box-shadow: inset 2px 2px 5px rgb(34, 34, 34);
+}
+.Keyboard .span-2 {
+  grid-column: span 2;
+  border-radius: 30px;
+}

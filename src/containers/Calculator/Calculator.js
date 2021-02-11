@@ -1,13 +1,13 @@
 import React from 'react';
-import './Keyboard/Keyboard';
-import Keyboard from './Keyboard/Keyboard';
-import Screen from './Screen/Screen';
+import Screen from '../../components/Screen/Screen';
+import Keyboard from '../../components/Keyboard/Keyboard';
+import './Calculator.css';
 
 const Calculator = () => {
   return (
     <div className='Calculator'>
-      <Keyboard />
       <Screen />
+      <Keyboard />
     </div>
   )
 }
