@@ -56,7 +56,7 @@ const reducer = (state = initialState, action) => {
 
     // Add passed value to newValue
     case 'APPEND_VALUE':
-      if (action.value === '.' && state.newValue.includes('.')) {
+      if (action.value === '.' && state.newValue.includes('.') || state.newValue.length >= 8) {
         return state;
       }
 
@@ -71,7 +71,7 @@ const reducer = (state = initialState, action) => {
         return state;
       }
 
-      if (state.oldValue !== '') {
+      if (state.oldValue) {
         const result = calculateResult(state);
 
         return {

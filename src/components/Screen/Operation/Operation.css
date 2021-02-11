@@ -5,11 +5,22 @@
   border: none;
   outline: none;
   border-radius: 0.625rem;
-  padding: 0.625rem;
+  padding: 10px 0.625rem 0;
   overflow-x: scroll;
   scroll-snap-align: end;
   font-family: 'Franklin Gothic Medium', Arial, sans-serif;
-  /* font-weight: bold; */
+  white-space: nowrap;
+}
+.Operation::-webkit-scrollbar {
+  height: 5px;
+}
+.Operation::-webkit-scrollbar-thumb {
+  background-color: #4C5454;
+  border-radius: 10px;
+  transition: background-color 0.5s linear;
+}
+.Operation::-webkit-scrollbar-thumb:hover {
+  background-color: #FF715B;
 }
 
 @media (max-width: 450px) {

@@ -20,7 +20,9 @@ const Operation = () => {
   }
 
   return (
-    <input className='Operation' value={formatValue(oldValue)} readOnly></input>
+    <div className='Operation'>
+      {formatValue(oldValue)}
+    </div>
   )
 }
 

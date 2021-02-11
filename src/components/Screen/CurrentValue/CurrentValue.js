@@ -9,8 +9,9 @@ const CurrentValue = () => {
   });
 
   return (
-    <input className='CurrentValue' value={newValue} readOnly>
-    </input>
+    <div className='CurrentValue'>{newValue}</div>
+    // <input className='CurrentValue' value={newValue} readOnly>
+    // </input>
   )
 }
 

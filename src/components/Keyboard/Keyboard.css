@@ -18,7 +18,6 @@
   outline: none;
   text-align: center;
   transition: background-color 0.2s linear;
-  /* font-family: 'Franklin Gothic Medium', Arial, sans-serif; */
 }
 .Keyboard button:hover {
   background-color: #42332e;

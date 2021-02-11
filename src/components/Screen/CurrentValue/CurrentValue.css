@@ -8,7 +8,21 @@
   padding: 0 0.625rem;
   font-family: 'Franklin Gothic Medium', Arial, sans-serif;
   overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-align: end;
 }
+.CurrentValue::-webkit-scrollbar {
+  height: 5px;
+}
+.CurrentValue::-webkit-scrollbar-thumb {
+  background-color: #4C5454;
+  border-radius: 10px;
+  transition: background-color 0.5s linear;
+}
+.CurrentValue::-webkit-scrollbar-thumb:hover {
+  background-color: #FF715B;
+}
+
 
 @media (max-width: 450px) {
   .CurrentValue {
