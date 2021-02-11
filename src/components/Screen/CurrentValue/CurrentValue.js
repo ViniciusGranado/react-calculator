@@ -1,8 +1,9 @@
 import React from 'react';
 import './CurrentValue.css';
-import {useSelector} from 'react-redux'
+import {useSelector} from 'react-redux';
 
-const CurrentValue = (props) => {
+
+const CurrentValue = () => {
   const newValue = useSelector((state) => {
     return state.newValue;
   });

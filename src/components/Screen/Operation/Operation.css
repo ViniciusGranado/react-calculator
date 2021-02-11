@@ -8,6 +8,8 @@
   padding: 0.625rem;
   overflow-x: scroll;
   scroll-snap-align: end;
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+  /* font-weight: bold; */
 }
 
 @media (max-width: 450px) {

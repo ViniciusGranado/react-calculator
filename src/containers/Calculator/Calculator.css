@@ -1,12 +1,12 @@
 .Calculator {
-  height: 90vh;
   background-color: #1EA896;
-  width: 300px;
   border-radius: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.205);
-  padding: 20px;
-  max-height: 31.25rem;
-  min-height: 450px;
   display: flex;
   flex-direction: column;
+  height: 90vh;
+  max-height: 31.25rem;
+  min-height: 450px;
+  padding: 20px;
+  width: 300px;
 }

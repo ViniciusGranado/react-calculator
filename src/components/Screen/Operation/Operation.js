@@ -2,7 +2,7 @@ import React from 'react';
 import './Operation.css';
 import {useSelector} from 'react-redux';
 
-const Operation = (props) => {
+const Operation = () => {
   const oldValue = useSelector((state) => {
     return state.oldValue;
   })
@@ -14,7 +14,8 @@ const Operation = (props) => {
   const formatValue = (value) => {
     if (!curOpr) {
       return '';
-    }
+    };
+    
     return `${value} ${curOpr}`;
   }
 

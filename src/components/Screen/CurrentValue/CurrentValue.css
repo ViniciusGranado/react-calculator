@@ -6,6 +6,8 @@
   outline: none;
   border-radius: 0.625rem;
   padding: 0 0.625rem;
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+  overflow-x: scroll;
 }
 
 @media (max-width: 450px) {

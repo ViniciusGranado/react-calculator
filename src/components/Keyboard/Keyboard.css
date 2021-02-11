@@ -1,23 +1,24 @@
 .Keyboard {
-  width: 100%;
-  flex: 1;
-  padding: 10px;
   display: grid;
+  flex: 1;
   gap: 5px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
+  padding: 10px;
+  width: 100%;
 }
 
 .Keyboard button {
+  background-color: #523F38;
   border: none;
   border-radius: 50%;
-  background-color: #523F38;
-  outline: none;
-  transition: background-color 0.2s linear;
   color: #FFF;
   font-size: 1.5rem;
   font-weight: bold;
+  outline: none;
   text-align: center;
+  transition: background-color 0.2s linear;
+  /* font-family: 'Franklin Gothic Medium', Arial, sans-serif; */
 }
 .Keyboard button:hover {
   background-color: #42332e;
@@ -25,7 +26,8 @@
 .Keyboard button:active {
   box-shadow: inset 2px 2px 5px rgb(34, 34, 34);
 }
+
 .Keyboard .span-2 {
-  grid-column: span 2;
   border-radius: 30px;
+  grid-column: span 2;
 }
