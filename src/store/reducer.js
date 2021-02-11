@@ -91,6 +91,9 @@ const reducer = (state = initialState, action) => {
       };
 
     case 'CHANGE_SIGN':
+      if (state.newValue.length === 0) {
+        return state;
+      }
       if (state.newValue[0] === '-') {
         const positiveValue = state.newValue.slice(1);
         return {
