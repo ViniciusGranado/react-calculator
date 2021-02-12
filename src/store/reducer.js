@@ -56,7 +56,7 @@ const reducer = (state = initialState, action) => {
 
     // Add passed value to newValue
     case 'APPEND_VALUE':
-      if (action.value === '.' && state.newValue.includes('.') || state.newValue.length >= 8) {
+      if ((action.value === '.' && state.newValue.includes('.')) || (state.newValue.length >= 8) || (!state.newValue && action.value === '0')) {
         return state;
       }
 
@@ -67,9 +67,17 @@ const reducer = (state = initialState, action) => {
 
       // Select math operator
     case 'SELECT_OPERATOR':
+      if (state.oldValue && !state.newValue) {
+        return {
+          ...state,
+          curOpr: action.opr,
+        }
+      }
+
       if(!state.newValue) {
         return state;
       }
+
 
       if (state.oldValue) {
         const result = calculateResult(state);

@@ -22,7 +22,7 @@ const Keyboard = () => {
     {type: 'APPEND_VALUE', label: '2', value: '2'},
     {type: 'APPEND_VALUE', label: '3', value: '3'},
     {type: 'SELECT_OPERATOR', label: '+', opr: '+'},
-    {type: 'APPEND_VALUE', label: '0', styleClass: 'span-2'},
+    {type: 'APPEND_VALUE', label: '0', value: '0', styleClass: 'span-2'},
     {type: 'APPEND_VALUE', label: '.', value:'.'},
     {type: 'CALCULATE_RESULT', label: '='},
   ];
