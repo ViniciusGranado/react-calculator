@@ -65,7 +65,7 @@ const reducer = (state = initialState, action) => {
         newValue: state.newValue += action.value,
       };
 
-      // Select math operator
+    // Select math operator
     case 'SELECT_OPERATOR':
       if (state.oldValue && !state.newValue) {
         return {
